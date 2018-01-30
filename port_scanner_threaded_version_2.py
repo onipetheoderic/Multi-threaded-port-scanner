@@ -81,3 +81,9 @@ if __name__ == '__main__':
     scan(host, from_port, end_port)
 
 
+#the if __name__ = '__main__':
+#every module in python has a special attribute called __name__.
+# here we are creating a new module and executing it as main program so the value of name is set to main
+#but if it was imported, let say the module name is my_module, the __name__ would be equal to mymodule and not __main__
+
+#one reason for doing this, is to prevent someone from importing your module and executing the function themselves
